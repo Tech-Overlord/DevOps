@@ -1,0 +1,10 @@
+---
+      instance_type: t2.micro       # Define the Instance types that need to be launched.
+      security_group:       # Add the security group(s) id(s) below
+                  - sg-12345678
+                  - sg-87654321
+      image: ami-749bc50b       # AMI to be added here to be used for creating the instance
+      region: us-east-1     # AWS Region to be added here
+      keypair: my_keys      # Specify your keypair name here
+      count: 1      # Number of instances you want to launch.
+      elastic_ip: 30.30.30.1        # Elastic IP that you want to attach to the instance.

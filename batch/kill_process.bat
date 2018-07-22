@@ -1,0 +1,2 @@
+REM Forcefully kills any process (as specified below, just replace the chromedriver.exe mentioned below with whichever process you wish to end) and returns any stderr/stdout to null. 
+Taskkill /F /IM  chrome.exe   2>&1  || exit /B 0

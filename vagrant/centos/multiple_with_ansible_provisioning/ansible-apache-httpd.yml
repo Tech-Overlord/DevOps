@@ -1,0 +1,9 @@
+---
+- hosts: all    # if all hosts are chosen, than the playbook will verify against them all.
+  become: yes   # if the arguments in task(s) below are not true, than action the required change to make them true.
+  tasks:
+      - name: Ensure that Apache Web Server (HTTPD) is installed    # if not - then it will be installed.
+        yum: name=httpd state=present
+      - name: Ensurer that the service is running and persistent    # if not - then it will be set to be in running state and in persistance mode.
+        service: name=httpd state=started enabled=yes
+...

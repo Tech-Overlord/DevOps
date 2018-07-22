@@ -1,0 +1,2 @@
+AWS_ACCESS_KEY = "(place AWS_ACCESS_KEY here)"
+AWS_SECRET_KEY = "(place AWS_SECRET_KEY here)"

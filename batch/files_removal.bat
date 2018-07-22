@@ -1,0 +1,2 @@
+REM Removes any files that are present in the path mentioned below. You can change it to whatever you like. Please note that I added a /D switch to remove any files that have existed for longer than a day so you can modify that as per your desire.
+forfiles /p "C:\Users\overlord\housekeeping" /s /m *.* /D -1 /C "cmd /c del /f /q @path"
