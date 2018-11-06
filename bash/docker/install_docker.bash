@@ -45,7 +45,7 @@ then
 		sleep 30
 		echo
 		echo "Confirming if apt-transport-https ca-certificates curl software-properties-common are installed by trying to install them."
-		sudo apt install apt-transport-https ca-certificates curl software-properties-common
+		sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 		sleep 20
 		echo
 		echo "Adding gpg of Docker's repository to our system." && echo
