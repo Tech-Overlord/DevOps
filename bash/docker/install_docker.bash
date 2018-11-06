@@ -61,8 +61,6 @@ then
 		sudo systemctl enable docker
 		sleep 3
 		echo
-		echo "Checking if systemctl service of docker-ce is now available." && echo
-		sudo systemctl status docker	# Confirming service status of Docker to see if it's running.
 		echo "Adding current user to docker group." && echo
 		sudo usermod -aG docker $(whoami)	# Adding current user to the Docker Group.
 		echo "Installation of docker has been completed!" && echo
