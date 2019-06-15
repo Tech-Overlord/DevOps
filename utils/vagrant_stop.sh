@@ -7,16 +7,16 @@
 
 instances=`vagrant global-status --prune | grep running | awk '{ print $1}'`
   
-if [ -z "$instances" ];
+if [ -z "${instances}" ];
 then
   echo -e "\nVagrant instances are not running. No instance to halt!"
 else
-  for instance in $instance;
+  for instance in ${instances};
   do
     echo -e "\nVagrant instance state for:\t$instance \n"
-    vagrant status $instance
+    vagrant status ${instance}
     echo -e "\nStopping Vagrant instance:\t$instance\n"
-    vagrant halt $instance
+    vagrant halt ${instance}
     echo -e "____________________________________________________________"
   done
 fi
